@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://gorbit.org:443/socket.io/socket.io.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      body {
+        margin: 0;
+        background-color: black;
+        -webkit-user-select: none;
+      }
+      .visible {
+        display: none;
+      }
+      .earth {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -45vmin;
+        margin-left: -45vmin;
+        width: 90vmin;
+        height: 90vmin;
+        background-size: 100%;
+      }
+      .loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -5vmin;
+        margin-left: -5vmin;
+        width: 10vmin;
+        height: 10vmin;
+        animation: rotate 1s linear;
+        animation-iteration-count: infinite;
+      }
+      .dot {
+        background: white;
+        width: 2vmin;
+        height: 2vmin;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading">
+      <div class="dot">
+
+      </div>
+    </div>
+    <div class="earth normal visible"></div>
+    <div class="earth infrared ">
+    </div>
+  </body>
+</html>
