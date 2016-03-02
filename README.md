@@ -12,3 +12,8 @@ Normal realtime image
 Infrared realtime image
 
 <img src="/readme/infrared.png" width=160 height=284 />
+
+### TO DO
+* Auto update when new image, instead of restarting app
+* Possible add more satelites
+* Go back one or two images
